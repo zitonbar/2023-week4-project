@@ -6,6 +6,6 @@
   background-repeat: no-repeat;
   @include mobile {
     background-image: url(https://github.com/zitonbar/2023-week4-project/blob/main/assets/images/home-header-sm.png?raw=true);
-    
+    padding: 144px 0;
   }
 }

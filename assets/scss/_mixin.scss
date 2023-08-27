@@ -8,3 +8,46 @@
         @content;
     }
 }
+
+@mixin title-fz48 {
+    font-size: $fz-48;
+    font-weight: 700;
+    text-align: center;
+}
+@mixin title-fz24 {
+    font-size: $fz-24;
+    font-weight: 700;
+    text-align: center;
+}
+@mixin title-fz48-italic {
+    font-size: $fz-48;
+    font-weight: 900;
+    font-style: italic;
+    color: $primary-color;
+    text-align: center;
+}
+
+.title {
+    @include title-fz48;
+    @include mobile {
+        @include title-fz24;
+    }
+    &-red {
+        color: $primary-text-color;
+        &-mb48 {
+            margin-bottom: 48px;
+        }
+        &-mb24 {
+            margin-bottom: 24px;
+        }
+    }
+    &-white {
+        color: $secondary-color;
+        &-mb48 {
+            margin-bottom: 48px;
+        }
+    }
+    &-italic {
+        @include title-fz48-italic;
+    }
+}
