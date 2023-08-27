@@ -10,8 +10,7 @@
         padding: 0 36px;
     }
     @include mobile {
-        padding-left: 13px;
-        padding-right: 14px;
+        padding: 0 14px 0 13px;
     }
 }
 %py-80 {
