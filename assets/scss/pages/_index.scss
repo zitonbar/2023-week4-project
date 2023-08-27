@@ -31,3 +31,210 @@
     }
   }
 }
+.feature {
+  background-color: $tertiary-color;
+  
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    
+    @include table {
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  &-item {
+    width: 306px;
+    text-align: center;
+    
+    @include table {
+      width: 336px;
+    }
+    
+    @include mobile {
+      width: 100%;
+      
+      &:nth-child(1) {
+        margin: 0 12px 0 0;
+      }
+      
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin: 0 12px;
+      }
+      
+      &:nth-child(4) {
+        margin: 0 0 0 12px;
+      }
+    }
+    
+    img {
+      width: 100px;
+    }
+    
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.classic {
+  &-list {
+    display: flex;
+    @include table {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+      &:nth-child(2){
+        margin: 0 24px 0 24px;
+        @include table {
+          margin: 24px 0 0 0;
+        }
+      }
+      &:nth-child(3){
+        @include table {
+          margin: 24px 0 0 0;
+        }
+      }
+    }
+    img {
+      width: 416px;
+      @include table {
+        width: 336px;
+      }
+    }
+  }
+}
+.co-branding {
+  background-image: url(https://github.com/zitonbar/2023-week4-project/blob/main/assets/images/index-bg.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include table {
+    background-image: url(https://github.com/zitonbar/2023-week4-project/blob/main/assets/images/index-bg-sm.png?raw=true);
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    @include table{
+      flex-direction: column;
+      li {
+        &:nth-child(2){
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+}
+.recommend {
+  &-list {
+    display: flex;
+    @include table {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-item {
+    width: 306px;
+    &:nth-child(1){
+      margin: 0 12px 0 0;
+      @include mobile {
+        margin: 0;
+      }
+    }
+    &:nth-child(2){
+      margin: 0 12px 0 12px;
+      @include table {
+        margin: 0 0 0 12px;
+      }
+      @include mobile {
+        margin: 16px 0 0 0;
+      }
+    }
+    &:nth-child(3){
+      margin: 0 12px 0 12px;
+      @include table {
+        margin: 24px 12px 0 0;
+      }
+      @include mobile {
+        margin: 16px 0 0 0;
+      }
+    }
+    &:nth-child(4){
+      margin: 0 0 0 12px;
+      @include table {
+        margin: 24px 0 0 12px;
+      }
+      @include mobile {
+        margin: 16px 0 0 0;
+      }
+    }
+    @include table {
+      width: 336px;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      border: 1px solid $border-gray;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+      height: 205px;
+    }
+  }
+}
+.name {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.time {
+  // display: block;
+  margin-top: auto;
+}
+.contact {
+  &-box {
+    background-color: $tertiary-color;
+    p {
+      font-size: $fz-20;
+      @include table {
+        font-size: $fz-16;
+      }
+    }
+  }
+  &-content {
+    width: 48%;
+    margin: 0 auto;
+    @include table {
+      width: 75%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    label {
+      margin-bottom: 8px;
+    }
+    input {
+      color: rgba(0, 0, 0, 0.2);
+      background-color: $tertiary-color;
+      border: 1px solid #000;
+      padding: 6px 12px;
+      margin-bottom: 16px;
+    }
+  }
+}
+.feedback {
+  color: rgba(0, 0, 0, 0.2);
+      background-color: $tertiary-color;
+      border: 1px solid #000;
+      padding: 6px 12px;
+      margin-bottom: 16px;
+}

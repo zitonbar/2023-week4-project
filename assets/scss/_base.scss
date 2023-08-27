@@ -15,3 +15,10 @@ a {
 label {
     margin-bottom: 8px;
 }
+h3 {
+    font-size: $fz-24;
+    font-weight: 700;
+    margin: 24px 0 8px 0;
+    color: $primary-text-color;
+    text-align: center;
+}

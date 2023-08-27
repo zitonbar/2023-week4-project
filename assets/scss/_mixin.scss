@@ -49,6 +49,12 @@
     }
     &-italic {
         @include title-fz48-italic;
+        &-mt8 {
+            margin-top: 8px;
+        }
+        &-bgwhite {
+            background-color: $secondary-color;
+        }
     }
 }
 
