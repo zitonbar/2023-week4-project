@@ -1,4 +1,133 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+@import '../mixin';
+
+.footer {
+  background-color: $primary-color;
+  &-nav {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    @include table {
+      padding-bottom: 40px;
+    }
+    @include mobile {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+  &-top {
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &-link {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-end;
+      flex: 1;
+    }
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile {
+      display: none;
+    }
+    li {
+      margin-right: 48px;
+      border-bottom: 3px solid transparent;
+      &:hover {
+        border-bottom: 3px solid $secondary-color;
+      }
+    }
+  }
+  &-icon {
+    display: flex;
+    @include mobile {
+      flex: 1;
+    }
+    li {
+      &:nth-child(2){
+        margin-left: 32px;
+        @include table {
+          margin-left: 16px;
+        }
+        @include mobile {
+          margin-left: 8px;
+        }
+      }
+      &:nth-child(3){
+        margin-left: 32px;
+        @include table {
+          margin-left: 16px;
+        }
+        @include mobile {
+          margin-left: 8px;
+        }
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    a {
+      width: 48px;
+      height: auto;
+      @include mobile {
+        width: 24px;
+      }
+    }
+  }
+  &-message {
+    font-size: $fz-36;
+    margin-bottom: 32px;
+    @include mobile {
+      font-size: $fz-16;
+      order: -1;
+      flex: 2;
+    }
+    li {
+      &:hover {
+        opacity: 0.8;
+      }
+      @include table {
+        &:nth-child(2){
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  &-copyright {
+    border-top: 1px solid $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    @include mobile {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 16px;
+    }
+    p {
+      color: $secondary-text-color;
+    }
+    &-link {
+      display: flex;
+      @include mobile {
+        flex-direction: column;
+      }
+      li {
+        margin-left: 48px;
+        border-bottom: 3px solid transparent;
+        @include mobile {
+          margin-left: 0;
+          margin-top: 8px;
+        }
+        &:hover {
+          border-bottom: 3px solid $secondary-color;
+        }
+      }
+    }
+  }
 }
