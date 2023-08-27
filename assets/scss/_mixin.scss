@@ -51,3 +51,38 @@
         @include title-fz48-italic;
     }
 }
+
+.button {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    &-buy {
+        width: 104px;
+        font-size: $fz-20;
+        font-weight: 500;
+        margin-top: 4px;
+        margin-left: auto;
+        padding: 6px 12px;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+    &-submit {
+        width: 416px;
+        font-size: $fz-16;
+        font-weight: 700;
+        padding: 16px 0;
+        margin: 0 auto;
+        @include table {
+            width: 44%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+}
