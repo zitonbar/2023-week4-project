@@ -1,0 +1,17 @@
+@import '_mixin.scss';
+
+body {
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+    @include table {
+        font-size: $fz-16;
+    }
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+}
+label {
+    margin-bottom: 8px;
+}
