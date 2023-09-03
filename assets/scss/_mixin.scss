@@ -1,5 +1,5 @@
 @mixin table {
-    @media (max-width: 768px){
+    @media (max-width: 992px){
         @content;
     }
 }
@@ -52,7 +52,7 @@
         &-mt8 {
             margin-top: 8px;
         }
-        &-bgwhite {
+        &-white {
             background-color: $secondary-color;
         }
     }

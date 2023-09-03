@@ -92,10 +92,6 @@
       
     }
     
-    img {
-      width: 100px;
-    }
-    
     p {
       text-align: left;
     }
@@ -121,12 +117,6 @@
         @include table {
           margin: 24px 0 0 0;
         }
-      }
-    }
-    img {
-      width: 416px;
-      @include table {
-        width: 336px;
       }
     }
   }
